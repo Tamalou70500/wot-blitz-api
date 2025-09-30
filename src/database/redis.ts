@@ -11,7 +11,7 @@ export const redis = new Redis({
   host: config.host,
   port: config.port,
   password: config.password,
-  retryDelayOnFailover: 100,
+  // La ligne 'retryDelayOnFailover: 100,' a été supprimée car elle causait une erreur de compilation.
   enableReadyCheck: false,
   maxRetriesPerRequest: null,
 });
