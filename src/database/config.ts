@@ -2,11 +2,11 @@ import { Pool } from 'pg';
 import { DatabaseConfig } from '../types';
 
 const config: DatabaseConfig = {
-  host: process.env.DB_HOST || 'localhost',
+  host: process.env.DB_HOST || 'dpg-d3dvhvh5pdvs73fpkhl0-a',
   port: parseInt(process.env.DB_PORT || '5432'),
-  database: process.env.DB_NAME || 'wot_blitz_stats',
-  user: process.env.DB_USER || 'postgres',
-  password: process.env.DB_PASSWORD || 'password',
+  database: process.env.DB_NAME || 'dbwotb',
+  user: process.env.DB_USER || 'dbwotb_user',
+  password: process.env.DB_PASSWORD || 'F2e69lapGlV6WQ5NAuoBCYv0R69tsPjS',
 };
 
 export const pool = new Pool({
